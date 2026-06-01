@@ -159,14 +159,15 @@
         <line x1="700" y1="320" x2="500" y2="358" stroke="#fb7185" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         <text x="608" y="344" fill="#94a3b8" font-size="9">PII-masked text</text>
 
-        <!-- Stage 4 → Stage 5 -->
-        <line x1="350" y1="450" x2="300" y2="488" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <line x1="650" y1="450" x2="700" y2="488" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <!-- Stage 4 → Query Rewrite -->
+        <line x1="300" y1="450" x2="300" y2="488" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead)"/>
 
-        <!-- Stage 5 → Stage 6 -->
-        <line x1="300" y1="550" x2="400" y2="588" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <!-- Query Rewrite → ChromaDB (rewrite runs BEFORE retrieval) -->
+        <line x1="422" y1="520" x2="578" y2="520" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="499" y="514" fill="#94a3b8" font-size="9" text-anchor="middle">rewritten query</text>
+
+        <!-- ChromaDB → Stage 6 -->
         <line x1="700" y1="550" x2="600" y2="588" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <text x="377" y="574" fill="#94a3b8" font-size="9">rewritten query</text>
         <text x="623" y="574" fill="#94a3b8" font-size="9">retrieved chunks</text>
 
         <!-- Stage 6 → Selector -->
